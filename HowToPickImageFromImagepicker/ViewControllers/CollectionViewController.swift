@@ -26,6 +26,7 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(true)
         self.numberOfSections = MemedPhoto.memeArray.count
     }

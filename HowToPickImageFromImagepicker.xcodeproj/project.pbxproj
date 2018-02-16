@@ -13,6 +13,8 @@
 		52272E0C203235470084BD4F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52272E0B203235470084BD4F /* TableViewController.swift */; };
 		52272E122032448F0084BD4F /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52272E112032448F0084BD4F /* NewTableViewCell.swift */; };
 		524C670620376CCC00853EFC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C670520376CCC00853EFC /* NavigationViewController.swift */; };
+		524C670920379B2700853EFC /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C670820379B2700853EFC /* PreviewViewController.swift */; };
+		524C670B2037A3DB00853EFC /* 3DTouchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524C670A2037A3DB00853EFC /* 3DTouchDelegate.swift */; };
 		528F6CA72029E8F400446BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F6CA62029E8F400446BEF /* AppDelegate.swift */; };
 		528F6CA92029E8F400446BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F6CA82029E8F400446BEF /* ViewController.swift */; };
 		528F6CAC2029E8F400446BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528F6CAA2029E8F400446BEF /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		52272E0B203235470084BD4F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		52272E112032448F0084BD4F /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 		524C670520376CCC00853EFC /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		524C670820379B2700853EFC /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		524C670A2037A3DB00853EFC /* 3DTouchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTouchDelegate.swift; sourceTree = "<group>"; };
 		528F6CA32029E8F400446BEF /* HowToPickImageFromImagepicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToPickImageFromImagepicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528F6CA62029E8F400446BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528F6CA82029E8F400446BEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 				524C670520376CCC00853EFC /* NavigationViewController.swift */,
 				52154B4A2035053F00C53ECC /* CollectionViewController.swift */,
 				52272E0B203235470084BD4F /* TableViewController.swift */,
+				524C670820379B2700853EFC /* PreviewViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -66,6 +71,7 @@
 		52272E102032357B0084BD4F /* Delegates and customCells */ = {
 			isa = PBXGroup;
 			children = (
+				524C670A2037A3DB00853EFC /* 3DTouchDelegate.swift */,
 				52272E112032448F0084BD4F /* NewTableViewCell.swift */,
 				52A374022034A3B70062A9F2 /* CustomCollectionViewCell.swift */,
 				528F6CA62029E8F400446BEF /* AppDelegate.swift */,
@@ -188,10 +194,12 @@
 				528F6CA92029E8F400446BEF /* ViewController.swift in Sources */,
 				52272E122032448F0084BD4F /* NewTableViewCell.swift in Sources */,
 				52A374032034A3B70062A9F2 /* CustomCollectionViewCell.swift in Sources */,
+				524C670920379B2700853EFC /* PreviewViewController.swift in Sources */,
 				52272E0C203235470084BD4F /* TableViewController.swift in Sources */,
 				5205370E202A6970002A0B91 /* MemedPhoto.swift in Sources */,
 				528F6CA72029E8F400446BEF /* AppDelegate.swift in Sources */,
 				52AC73262031CE24004D8982 /* TabBarController.swift in Sources */,
+				524C670B2037A3DB00853EFC /* 3DTouchDelegate.swift in Sources */,
 				524C670620376CCC00853EFC /* NavigationViewController.swift in Sources */,
 				520FC37A202A4813003789EE /* CustomTextFieldDelegate.swift in Sources */,
 			);

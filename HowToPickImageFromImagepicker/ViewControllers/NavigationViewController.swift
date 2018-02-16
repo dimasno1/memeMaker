@@ -15,7 +15,7 @@ class NavigationViewController: UINavigationController {
         
         self.navigationBar.topItem?.title = "Sent memes"
         self.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(presentAddController))
-        self.navigationBar.topItem?.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: nil)
+    
         self.navigationBar.barStyle = .black
         // Do any additional setup after loading the view.
     }
