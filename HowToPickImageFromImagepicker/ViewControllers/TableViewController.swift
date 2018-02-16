@@ -9,18 +9,23 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-    
+
     var numberOfRows: Int?{
         didSet{
+            self.tableView.rowHeight = self.view.frame.height / 4
             tableView.reloadData()
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.numberOfRows = MemedPhoto.memeArray.count
+        
+       self.tableView.backgroundColor = .gray
     }
 
     // MARK: - Table view data source
+    
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.register(NewTableViewCell.self, forCellReuseIdentifier: "memeCell")

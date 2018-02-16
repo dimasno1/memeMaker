@@ -12,6 +12,7 @@ class NewTableViewCell: UITableViewCell {
 
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+        self.textLabel?.font = self.textLabel?.font.withSize(40)
     }
    
     override func layoutSubviews() {
