@@ -9,16 +9,24 @@
 /* Begin PBXBuildFile section */
 		5205370E202A6970002A0B91 /* MemedPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205370D202A6970002A0B91 /* MemedPhoto.swift */; };
 		520FC37A202A4813003789EE /* CustomTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520FC379202A4813003789EE /* CustomTextFieldDelegate.swift */; };
+		52154B4B2035053F00C53ECC /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52154B4A2035053F00C53ECC /* CollectionViewController.swift */; };
+		52272E0C203235470084BD4F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52272E0B203235470084BD4F /* TableViewController.swift */; };
+		52272E122032448F0084BD4F /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52272E112032448F0084BD4F /* NewTableViewCell.swift */; };
 		528F6CA72029E8F400446BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F6CA62029E8F400446BEF /* AppDelegate.swift */; };
 		528F6CA92029E8F400446BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528F6CA82029E8F400446BEF /* ViewController.swift */; };
 		528F6CAC2029E8F400446BEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528F6CAA2029E8F400446BEF /* Main.storyboard */; };
 		528F6CAE2029E8F400446BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528F6CAD2029E8F400446BEF /* Assets.xcassets */; };
 		528F6CB12029E8F400446BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528F6CAF2029E8F400446BEF /* LaunchScreen.storyboard */; };
+		52A374032034A3B70062A9F2 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A374022034A3B70062A9F2 /* CustomCollectionViewCell.swift */; };
+		52AC73262031CE24004D8982 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC73252031CE24004D8982 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5205370D202A6970002A0B91 /* MemedPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemedPhoto.swift; sourceTree = "<group>"; };
 		520FC379202A4813003789EE /* CustomTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldDelegate.swift; sourceTree = "<group>"; };
+		52154B4A2035053F00C53ECC /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		52272E0B203235470084BD4F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		52272E112032448F0084BD4F /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 		528F6CA32029E8F400446BEF /* HowToPickImageFromImagepicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowToPickImageFromImagepicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528F6CA62029E8F400446BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528F6CA82029E8F400446BEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		528F6CAD2029E8F400446BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528F6CB02029E8F400446BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528F6CB22029E8F400446BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A374022034A3B70062A9F2 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		52AC73252031CE24004D8982 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52272E0F203235680084BD4F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				528F6CA82029E8F400446BEF /* ViewController.swift */,
+				52154B4A2035053F00C53ECC /* CollectionViewController.swift */,
+				52272E0B203235470084BD4F /* TableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		52272E102032357B0084BD4F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				528F6CA62029E8F400446BEF /* AppDelegate.swift */,
+				520FC379202A4813003789EE /* CustomTextFieldDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		528F6C9A2029E8F300446BEF = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +87,16 @@
 		528F6CA52029E8F400446BEF /* HowToPickImageFromImagepicker */ = {
 			isa = PBXGroup;
 			children = (
-				528F6CA62029E8F400446BEF /* AppDelegate.swift */,
-				528F6CA82029E8F400446BEF /* ViewController.swift */,
-				520FC379202A4813003789EE /* CustomTextFieldDelegate.swift */,
+				52272E102032357B0084BD4F /* Delegates */,
+				52272E0F203235680084BD4F /* ViewControllers */,
+				52AC73252031CE24004D8982 /* TabBarController.swift */,
+				52272E112032448F0084BD4F /* NewTableViewCell.swift */,
+				52A374022034A3B70062A9F2 /* CustomCollectionViewCell.swift */,
 				5205370D202A6970002A0B91 /* MemedPhoto.swift */,
 				528F6CAA2029E8F400446BEF /* Main.storyboard */,
-				528F6CAD2029E8F400446BEF /* Assets.xcassets */,
 				528F6CAF2029E8F400446BEF /* LaunchScreen.storyboard */,
 				528F6CB22029E8F400446BEF /* Info.plist */,
+				528F6CAD2029E8F400446BEF /* Assets.xcassets */,
 			);
 			path = HowToPickImageFromImagepicker;
 			sourceTree = "<group>";
@@ -142,9 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52154B4B2035053F00C53ECC /* CollectionViewController.swift in Sources */,
 				528F6CA92029E8F400446BEF /* ViewController.swift in Sources */,
+				52272E122032448F0084BD4F /* NewTableViewCell.swift in Sources */,
+				52A374032034A3B70062A9F2 /* CustomCollectionViewCell.swift in Sources */,
+				52272E0C203235470084BD4F /* TableViewController.swift in Sources */,
 				5205370E202A6970002A0B91 /* MemedPhoto.swift in Sources */,
 				528F6CA72029E8F400446BEF /* AppDelegate.swift in Sources */,
+				52AC73262031CE24004D8982 /* TabBarController.swift in Sources */,
 				520FC37A202A4813003789EE /* CustomTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

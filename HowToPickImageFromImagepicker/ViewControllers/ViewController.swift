@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var bottomToolBar: UIToolbar?
     var topToolBar: UIToolbar?
     let textFieldsDelegate = CustomTextFieldDelegate()
-    
+
     
     //MARK: ImagePicker funcs
     
@@ -55,19 +55,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // MARK: TopToolBar properties:
         let topToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 75))
         let barShareButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareBtnPressed))
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelBtPressed))
+        topToolBar.barStyle = .black
         self.shareButton = barShareButton
         
-        topToolBar.items = [barShareButton]
+        topToolBar.items = [barShareButton, cancelButton]
         
         // MARK: BottomToolBar properties:
         let bottomToolBar = UIToolbar(frame: CGRect(x: 0, y: self.view.bounds.height - 75, width: self.view.bounds.width, height: 75))
         let bottomPickImageButton = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(pickImage))
         let bottomCameraButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(makePhoto))
-        
+        bottomToolBar.barStyle = .black
         bottomToolBar.items = [bottomPickImageButton, bottomCameraButton]
         
         self.bottomToolBar = bottomToolBar
@@ -118,9 +119,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //MARK: Actions
     func save(){
         if let image = imageViewier.image{
-            var meme = MemedPhoto(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: image)
-            meme.memedImage = generateMemedImage()
+            let memedImage = generateMemedImage()
+            let meme = MemedPhoto(topText: topTextField.text!, bottomText: bottomTextField.text!, originalImage: image, memedPhoto: memedImage)
+            MemedPhoto.memeArray.append(meme)
         }
+        print(MemedPhoto.memeArray.count)
     }
     
     func generateMemedImage() -> UIImage {
@@ -133,7 +136,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let image = UIGraphicsGetImageFromCurrentImageContext()
         let memedImage = image!
         UIGraphicsEndImageContext()
-       
+        
         topToolBar?.isHidden = false
         bottomToolBar?.isHidden = false
         return memedImage
@@ -147,6 +150,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.present(activityController, animated: true, completion: nil)
         }
     }
+    
+    @objc func cancelBtPressed(){
+        DispatchQueue.main.async {
+            self.imageViewier.image = nil
+            self.shareButton?.isEnabled = false
+        }
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     //Pick image from Photo Library
     @objc func pickImage() {

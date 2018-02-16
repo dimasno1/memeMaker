@@ -14,15 +14,16 @@ struct MemedPhoto{
     
     let topText: String
     let bottomText: String
-    
     let originalImage: UIImage
     var memedImage: UIImage?
     
     
-    init(topText: String, bottomText: String, originalImage: UIImage) {
+    init(topText: String, bottomText: String, originalImage: UIImage, memedPhoto: UIImage? ) {
         self.topText = topText
         self.bottomText = bottomText
         self.originalImage = originalImage
+        self.memedImage = memedPhoto
     }
-
+    
+    static var memeArray = [MemedPhoto]()
 }
